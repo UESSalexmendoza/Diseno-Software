@@ -51,13 +51,15 @@ El proyecto se encuentra divido en 2 fases
 - 📄 [Identificación de actores y funcionalidades](https://github.com/UESSalexmendoza/Diseno-Software/blob/main/Fase%201/Documentacion/03-%20Actores%20y%20funcionalidades.pdf)
 - 📄 [Requerimientos funcionales y no funcionales](https://github.com/UESSalexmendoza/Diseno-Software/blob/main/Fase%201/Documentacion/05-Requerimientos%20funcionales%20y%20no%20funcionales.pdf)
 ### 🏗️ Etapa 03 – Diseño Arquitectónico
-- 📄 [Documento de arquitectura de software](../blob/main/Fase%201/Documentacion/Arquitectura_Diseno.pdf)
+- 📄 [Documento de arquitectura de software](https://github.com/UESSalexmendoza/Diseno-Software/blob/main/Fase%201/Documentacion/04%20Diseno%20Arquitectonico.pdf)
+- 📄 [Arquitectura de Seguridad](https://github.com/UESSalexmendoza/Diseno-Software/blob/main/Fase%201/Documentacion/05%20Diseno%20Arquitectonico%20-%20Seguridad.pdf)
 ---
 
 ## 🧾 Rúbricas de Evaluación
 
 - 📄 [Rúbrica de evaluación – Alex Mendoza](https://github.com/UESSalexmendoza/Diseno-Software/blob/main/Fase%201/Rubricas/06-Rubrica-Evaluacion-Alex%20Mendoza.pdf)
 - 📄 [Rúbrica de evaluación – Alejandro Cuenca](https://github.com/UESSalexmendoza/Diseno-Software/blob/main/Fase%201/Rubricas/06-Rubrica-Evaluacion-Alejandro%20Cuenca.pdf)
+- 📄 [Rúbrica de evaluación – Oscar Vallejo](https://github.com/UESSalexmendoza/Diseno-Software/blob/main/Fase%201/Rubricas/06-Rubrica-Evaluacion-Oscar%20Vallejo.pdf)
 
 ---
 
