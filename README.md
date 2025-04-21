@@ -37,6 +37,30 @@ Diseñar y desarrollar un prototipo funcional de una plataforma web que permita 
 
 ---
 
+## 📁 Navegación de Documentos del Proyecto
+El proyecto se encuentra divido en 2 fases
+- 📄 Fase 01. Se presentara la documentacion inicial del diseno
+- 📄 Fase 02. Se complementara la odcumentacion y se mostrara un prototipo funcional
+### 🧭 Etapa 01 – Planificación y Coordinación
+- 📄 [Acta de conformación del equipo](https://github.com/UESSalexmendoza/Diseno-Software/blob/main/Fase%201/Actas/01-Acta-de-Conformacion-del-Equipo.pdf)
+- 📄 [Acta de reunión RF y RNF](https://github.com/UESSalexmendoza/Diseno-Software/blob/main/Fase%201/Actas/01-Acta-de-Reuni%C3%B3n-RF%20Y%20RNF.pdf)
+- 📄 [Cronograma del Proyecto](https://github.com/UESSalexmendoza/Diseno-Software/blob/main/Fase%201/Documentacion/02-Cronograma.pdf)
+- 📄 [Bitácora de decisiones (en Wiki)](https://github.com/UESSalexmendoza/Diseno-Software/wiki/Bit%C3%A1cora-de-Decisiones)
+### 🔍 Etapa 02 – Análisis del Problema y Requerimientos
+- 📄 [Visión del sistema](https://github.com/UESSalexmendoza/Diseno-Software/blob/main/Fase%201/Documentacion/04-Visi%C3%B3n%20del%20sistema.pdf)
+- 📄 [Identificación de actores y funcionalidades](https://github.com/UESSalexmendoza/Diseno-Software/blob/main/Fase%201/Documentacion/03-%20Actores%20y%20funcionalidades.pdf)
+- 📄 [Requerimientos funcionales y no funcionales](https://github.com/UESSalexmendoza/Diseno-Software/blob/main/Fase%201/Documentacion/05-Requerimientos%20funcionales%20y%20no%20funcionales.pdf)
+### 🏗️ Etapa 03 – Diseño Arquitectónico
+- 📄 [Documento de arquitectura de software](../blob/main/Fase%201/Documentacion/Arquitectura_Diseno.pdf)
+---
+
+## 🧾 Rúbricas de Evaluación
+
+- 📄 [Rúbrica de evaluación – Alex Mendoza](https://github.com/UESSalexmendoza/Diseno-Software/blob/main/Fase%201/Rubricas/06-Rubrica-Evaluacion-Alex%20Mendoza.pdf)
+- 📄 [Rúbrica de evaluación – Alejandro Cuenca](https://github.com/UESSalexmendoza/Diseno-Software/blob/main/Fase%201/Rubricas/06-Rubrica-Evaluacion-Alejandro%20Cuenca.pdf)
+
+---
+
 ## 🚀 ¿Cómo ejecutar el prototipo?
 
 ### 🔧 Requisitos previos
