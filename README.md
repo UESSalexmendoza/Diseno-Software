@@ -37,10 +37,12 @@ Diseñar y desarrollar un prototipo funcional de una plataforma web que permita 
 
 ---
 
+
 ## 📁 Navegación de Documentos del Proyecto
 El proyecto se encuentra divido en 2 fases
 - 📄 Fase 01. Se presentara la documentacion inicial del diseno
 - 📄 Fase 02. Se complementara la odcumentacion y se mostrara un prototipo funcional
+- 📄 [Wiki](https://github.com/UESSalexmendoza/Diseno-Software/wiki)
 ### 🧭 Etapa 01 – Planificación y Coordinación
 - 📄 [Acta de conformación del equipo](https://github.com/UESSalexmendoza/Diseno-Software/blob/main/Fase%201/Actas/01-Acta-de-Conformacion-del-Equipo.pdf)
 - 📄 [Acta de reunión RF y RNF](https://github.com/UESSalexmendoza/Diseno-Software/blob/main/Fase%201/Actas/01-Acta-de-Reuni%C3%B3n-RF%20Y%20RNF.pdf)
@@ -60,6 +62,12 @@ El proyecto se encuentra divido en 2 fases
 - 📄 [Rúbrica de evaluación – Alex Mendoza](https://github.com/UESSalexmendoza/Diseno-Software/blob/main/Fase%201/Rubricas/06-Rubrica-Evaluacion-Alex%20Mendoza.pdf)
 - 📄 [Rúbrica de evaluación – Alejandro Cuenca](https://github.com/UESSalexmendoza/Diseno-Software/blob/main/Fase%201/Rubricas/06-Rubrica-Evaluacion-Alejandro%20Cuenca.pdf)
 - 📄 [Rúbrica de evaluación – Oscar Vallejo](https://github.com/UESSalexmendoza/Diseno-Software/blob/main/Fase%201/Rubricas/06-Rubrica-Evaluacion-Oscar%20Vallejo.pdf)
+
+---
+## 🚀 Control y seguimiento
+
+- 📄 [Evidencias para deciiones](https://github.com/UESSalexmendoza/Diseno-Software/discussions)
+- 📄 [Bitacora de Pendientes](https://github.com/UESSalexmendoza/Diseno-Software/issues?q=is%3Aissue%20state%3Aclosed)
 
 ---
 
