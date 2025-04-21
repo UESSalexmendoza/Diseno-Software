@@ -41,7 +41,7 @@ Diseñar y desarrollar un prototipo funcional de una plataforma web que permita 
 ## 📁 Navegación de Documentos del Proyecto
 El proyecto se encuentra divido en 2 fases
 - 📄 Fase 01. Se presentara la documentacion inicial del diseno
-- 📄 Fase 02. Se complementara la odcumentacion y se mostrara un prototipo funcional
+- 📄 Fase 02. Se complementara la odcumentacion y se mostrara un prototipo funcional (Segunda etapa del proyecto para cierre de parcial)
 - 📄 [Wiki](https://github.com/UESSalexmendoza/Diseno-Software/wiki)
 ### 🧭 Etapa 01 – Planificación y Coordinación
 - 📄 [Acta de conformación del equipo](https://github.com/UESSalexmendoza/Diseno-Software/blob/main/Fase%201/Actas/01-Acta-de-Conformacion-del-Equipo.pdf)
@@ -66,7 +66,7 @@ El proyecto se encuentra divido en 2 fases
 ---
 ## 🚀 Control y seguimiento
 
-- 📄 [Evidencias para deciiones](https://github.com/UESSalexmendoza/Diseno-Software/discussions)
+- 📄 [Evidencias para decisiones](https://github.com/UESSalexmendoza/Diseno-Software/discussions)
 - 📄 [Bitacora de Pendientes](https://github.com/UESSalexmendoza/Diseno-Software/issues?q=is%3Aissue%20state%3Aclosed)
 
 ---
