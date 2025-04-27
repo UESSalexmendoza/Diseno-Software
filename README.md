@@ -28,12 +28,13 @@ Diseñar y desarrollar un prototipo funcional de una plataforma web que permita 
 
 ---
 
-## 🛠️ Tecnologías utilizadas
+## 🛠️ Tecnologías Utilizadas
 
-- **Lenguaje**: Python 3.10+
-- **Framework**: Django
-- **Base de datos**: MySQL
-- **Control de versiones**: Git + GitHub
+- **Lenguaje:** Python 3.10+
+- **Framework:** Django
+- **Base de datos:** MySQL
+- **Control de versiones:** Git + GitHub
+- **Frontend:** HTML5, CSS3, JavaScript (usando templates de Django)
 
 ---
 
