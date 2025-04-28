@@ -56,13 +56,29 @@ El proyecto se encuentra divido en 2 fases
 ### 🏗️ Etapa 03 – Diseño Arquitectónico
 - 📄 [Documento de arquitectura de software](https://github.com/UESSalexmendoza/Diseno-Software/blob/main/Fase%201/Documentacion/04%20Diseno%20Arquitectonico.pdf)
 - 📄 [Arquitectura de Seguridad](https://github.com/UESSalexmendoza/Diseno-Software/blob/main/Fase%201/Documentacion/05%20Diseno%20Arquitectonico%20-%20Seguridad.pdf)
+- 📄 [Diagrama de Componentes]
+- 📄 [Diagrama de despliegue]
+### 🏗️ Etapa 04: Diseño detallado
+- 📄 [Diagramas de clases]
+- 📄 [Diagramas de secuencia]
+- 📄 [Modelo de datos]
+- 📄 [Justificación de patrones de diseño]
+### 🏗️ Etapa 05: Desarrollo del prototipo
+- 📄 [Prototipo funcional en alta fidelidad]
+- 📄 [Control de versiones en GitHub con ramas por integrante]
+- 📄 [Documentación del código y README del proyecto]
 ---
 
 ## 🧾 Rúbricas de Evaluación
+### 🧾 Fase 1
 
 - 📄 [Rúbrica de evaluación – Alex Mendoza](https://github.com/UESSalexmendoza/Diseno-Software/blob/main/Fase%201/Rubricas/06-Rubrica-Evaluacion-Alex%20Mendoza.pdf)
 - 📄 [Rúbrica de evaluación – Alejandro Cuenca](https://github.com/UESSalexmendoza/Diseno-Software/blob/main/Fase%201/Rubricas/06-Rubrica-Evaluacion-Alejandro%20Cuenca.pdf)
 - 📄 [Rúbrica de evaluación – Oscar Vallejo](https://github.com/UESSalexmendoza/Diseno-Software/blob/main/Fase%201/Rubricas/06-Rubrica-Evaluacion-Oscar%20Vallejo.pdf)
+### 🧾 Fase 2
+- 📄 [Rúbrica de evaluación – Alex Mendoza]
+- 📄 [Rúbrica de evaluación – Alejandro Cuenca]
+- 📄 [Rúbrica de evaluación – Oscar Vallejo]
 
 ---
 ## 🚀 Control y seguimiento
