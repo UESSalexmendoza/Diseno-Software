@@ -65,6 +65,8 @@ El proyecto se encuentra divido en 2 fases
 - 📄 [Justificación de patrones de diseño](https://github.com/UESSalexmendoza/Diseno-Software/blob/a59738d1b02fdcc24a697e4eb27291339b02c2da/Fase%202/Justificaci%C3%B3n%20de%20dise%C3%B1o/05%20Justificacion%20de%20Diseno.pdf)
 ### 🏗️ Etapa 05: Desarrollo del prototipo
 - 📄 [Prototipo funcional en alta fidelidad]
+   - [Version 01](https://github.com/UESSalexmendoza/Diseno-Software/tree/main/Proyecto/Version%2001/trueque_libros_platform)
+   - Version Final
 - 📄 [Control de versiones en GitHub con ramas por integrante]
 - 📄 [Documentación del código y README del proyecto]
 ---
@@ -76,9 +78,9 @@ El proyecto se encuentra divido en 2 fases
 - 📄 [Rúbrica de evaluación – Alejandro Cuenca](https://github.com/UESSalexmendoza/Diseno-Software/blob/main/Fase%201/Rubricas/06-Rubrica-Evaluacion-Alejandro%20Cuenca.pdf)
 - 📄 [Rúbrica de evaluación – Oscar Vallejo](https://github.com/UESSalexmendoza/Diseno-Software/blob/main/Fase%201/Rubricas/06-Rubrica-Evaluacion-Oscar%20Vallejo.pdf)
 ### 🧾 Fase 2
-- 📄 [Rúbrica de evaluación – Alex Mendoza]
-- 📄 [Rúbrica de evaluación – Alejandro Cuenca](https://github.com/UESSalexmendoza/Diseno-Software/blob/011f0d34a92c58fa692a51a8dc8af00b874d1b4c/Fase%202/Rubricas/07-Rubrica-Evaluacion-Alejandro%20Cuenca.pdf)
-- 📄 [Rúbrica de evaluación – Oscar Vallejo]
+- 📄 [Rúbrica de evaluación – Alex Mendoza](https://github.com/UESSalexmendoza/Diseno-Software/blob/main/Fase%202/Rubricas/06-Rubrica-Evaluacion-Alex%20Mendoza.pdf)
+- 📄 [Rúbrica de evaluación – Alejandro Cuenca](https://github.com/UESSalexmendoza/Diseno-Software/blob/main/Fase%202/Rubricas/07-Rubrica-Evaluacion-Alejandro%20Cuenca.pdf)
+- 📄 [Rúbrica de evaluación – Oscar Vallejo](https://github.com/UESSalexmendoza/Diseno-Software/blob/main/Fase%202/Rubricas/06-Rubrica-Evaluacion-Oscar%20Vallejo.pdf)
 
 ---
 ## 🚀 Control y seguimiento
