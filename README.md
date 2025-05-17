@@ -77,7 +77,7 @@ El proyecto se encuentra divido en 2 fases
 - 📄 [Rúbrica de evaluación – Oscar Vallejo](https://github.com/UESSalexmendoza/Diseno-Software/blob/main/Fase%201/Rubricas/06-Rubrica-Evaluacion-Oscar%20Vallejo.pdf)
 ### 🧾 Fase 2
 - 📄 [Rúbrica de evaluación – Alex Mendoza]
-- 📄 [Rúbrica de evaluación – Alejandro Cuenca]
+- 📄 [Rúbrica de evaluación – Alejandro Cuenca](https://github.com/UESSalexmendoza/Diseno-Software/blob/011f0d34a92c58fa692a51a8dc8af00b874d1b4c/Fase%202/Rubricas/07-Rubrica-Evaluacion-Alejandro%20Cuenca.pdf)
 - 📄 [Rúbrica de evaluación – Oscar Vallejo]
 
 ---
