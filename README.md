@@ -62,7 +62,7 @@ El proyecto se encuentra divido en 2 fases
 - 📄 [Diagramas de clases]
 - 📄 [Diagramas de secuencia]
 - 📄 [Modelo de datos](https://github.com/UESSalexmendoza/Diseno-Software/blob/88d308a5a1fb661f7957c7a11603b2fc266e4a95/Fase%202/Modelo%20de%20datos/04%20Modelo%20de%20Datos.pdf)
-- 📄 [Justificación de patrones de diseño]
+- 📄 [Justificación de patrones de diseño](https://github.com/UESSalexmendoza/Diseno-Software/blob/a59738d1b02fdcc24a697e4eb27291339b02c2da/Fase%202/Justificaci%C3%B3n%20de%20dise%C3%B1o/05%20Justificacion%20de%20Diseno.pdf)
 ### 🏗️ Etapa 05: Desarrollo del prototipo
 - 📄 [Prototipo funcional en alta fidelidad]
 - 📄 [Control de versiones en GitHub con ramas por integrante]
