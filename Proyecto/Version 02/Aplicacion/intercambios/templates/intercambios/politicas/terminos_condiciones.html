@@ -1,0 +1,59 @@
+{% extends 'intercambios/base.html' %}
+{% block content %}
+<section class="py-5">
+    <div class="container px-5">
+      <div class="bg-light rounded-3 py-5 px-4 px-md-5 mb-5">
+        <div class="row gx-5 justify-content-center">
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+            <h1 class="fw-bold mb-4">Términos y Condiciones</h1>
+            <p class="text-muted">
+                Estos Términos y Condiciones regulan el uso de la plataforma digital de trueque de libros desarrollada por estudiantes de la Universidad de Especialidades Espíritu Santo (UEES).
+            </p>
+
+            <h4 class="mt-4">1. Aceptación de los términos</h4>
+            <p>
+                Al registrarse o utilizar la plataforma, el usuario acepta estar sujeto a estos términos. Si no está de acuerdo, deberá abstenerse de usar la aplicación.
+            </p>
+
+            <h4 class="mt-4">2. Uso permitido</h4>
+            <p>
+                La plataforma está destinada exclusivamente para estudiantes de la UEES con fines de intercambio académico. Está prohibido utilizarla para fines comerciales, fraudulentos o que afecten a otros usuarios.
+            </p>
+
+            <h4 class="mt-4">3. Contenido publicado</h4>
+            <p>
+                Los usuarios son responsables del contenido que publican, incluyendo descripciones de libros, mensajes y datos personales. La administración podrá moderar y eliminar publicaciones inadecuadas.
+            </p>
+
+            <h4 class="mt-4">4. Responsabilidad</h4>
+            <p>
+                La plataforma actúa como intermediaria entre usuarios y no garantiza el cumplimiento de los intercambios. Cualquier inconveniente entre partes deberá ser resuelto directamente entre ellas.
+            </p>
+
+            <h4 class="mt-4">5. Cancelación de cuentas</h4>
+            <p>
+                La administración se reserva el derecho de suspender o eliminar cuentas que infrinjan estos términos o comprometan la seguridad de otros usuarios.
+            </p>
+
+            <h4 class="mt-4">6. Cambios en los términos</h4>
+            <p>
+                Estos términos pueden ser modificados en cualquier momento. El uso continuo de la plataforma implica aceptación de los cambios.
+            </p>
+
+            <p class="mt-4">
+                Para consultas, comunícate a <strong>soporte@truequelibrosuees.edu.ec</strong>.
+            </p>
+
+            <div class="text-end mt-5">
+                <a href="{% url 'inicio' %}" class="btn btn-secondary">Volver al inicio</a>
+            </div>
+        </div>
+    </div>
+</div>          
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}

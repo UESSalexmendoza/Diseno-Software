@@ -1,0 +1,68 @@
+{% extends 'intercambios/base.html' %}
+{% block content %}
+<section class="py-5 bg-light">
+  <div class="container-fluid px-3 rounded-3">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold text-primary">Mis libros publicados</h2>
+    </div>
+    <div class="row justify-content-center mb-4">
+    <div class="col-md-6">
+        <form method="get" class="d-flex">
+        <input type="text" name="q" value="{{ request.GET.q }}" class="form-control me-2" placeholder="Buscar por título, autor o categoría...">
+        <button type="submit" class="btn btn-outline-primary">Buscar</button>
+        </form>
+    </div>
+    </div>
+    <div class="row justify-content-center g-4">
+      {% for libro in libros %}
+      <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+        <div class="card h-100 shadow border-0" style="background-color: #eaf6ff;">
+          <div class="card-body">
+            <h5 class="card-title text-primary">{{ libro.nombre }}</h5>
+            <p class="card-text mb-1"><strong>Autor:</strong> {{ libro.autor }}</p>
+            <p class="card-text mb-1"><strong>Categoría:</strong> {{ libro.categoria.nombreCategoria }}</p>
+            <p class="card-text mb-1 d-none d-md-block"><strong>Estado:</strong> {{ libro.estadoLibro.estado }}</p>
+            <p class="card-text mb-1 d-none d-lg-block"><strong>Vistas:</strong> {{ libro.vistas|default:0 }}</p>
+          </div>
+          <div class="card-footer bg-white border-0 text-end">
+            <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#detalleLibro{{ libro.id }}">
+              Ver detalle
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal de detalle -->
+      <div class="modal fade" id="detalleLibro{{ libro.id }}" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+              <h5 class="modal-title">{{ libro.nombre }}</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                {% if libro.imagen %}
+                <div class="col-md-4 mb-3">
+                  <img src="{{ libro.imagen.url }}" class="img-fluid rounded shadow-sm" alt="Portada">
+                </div>
+                {% endif %}
+                <div class="col-md-8">
+                  <p><strong>Autor:</strong> {{ libro.autor }}</p>
+                  <p><strong>Descripción:</strong> {{ libro.descripcion }}</p>
+                  <p><strong>Estado:</strong> {{ libro.estadoLibro.estado }}</p>
+                  <p><strong>Vistas:</strong> {{ libro.vistas|default:0 }}</p>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock %}

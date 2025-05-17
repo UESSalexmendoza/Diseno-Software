@@ -1,0 +1,71 @@
+{% extends 'intercambios/base.html' %}
+{% load static %}
+
+
+{% block content %}
+<section class="py-5">
+    <div class="container px-5">
+        <div class="bg-light rounded-3 py-5 px-4 px-md-5 mb-5">
+            <div class="row gx-5 justify-content-center">
+                <div class="col-lg-8 col-xl-6">
+                    <div class="text-center mb-5">
+                        <h4 class="fw-bold">Publicar un nuevo libro</h4>
+                    </div>
+                    <form method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <div class="form-floating mb-3">
+                            {{ form.nombre }}
+                            <label for="{{ form.nombre.id_for_label }}">Nombre del Libro</label>
+                            {% if form.nombre.errors %}
+                            <div class="text-danger">{{ form.nombre.errors }}</div>
+                            {% endif %}
+                        </div>                    
+                        <div class="form-floating mb-3">
+                            {{ form.descripcion }}
+                            <label for="{{ form.descripcion.id_for_label }}">Descripcion del Libro</label>
+                            {% if form.descripcion.errors %}
+                            <div class="text-danger">{{ form.descripcion.errors }}</div>
+                            {% endif %}
+                        </div>                    
+                        <div class="form-floating mb-3">
+                            {{ form.autor }}
+                            <label for="{{ form.autor.id_for_label }}">Autor</label>
+                            {% if form.autor.errors %}
+                            <div class="text-danger">{{ form.autor.errors }}</div>
+                            {% endif %}
+                        </div>                    
+                        <div class="form-floating mb-3">
+                            {{ form.editorial }}
+                            <label for="{{ form.editorial.id_for_label }}">Editorial</label>
+                            {% if form.editorial.errors %}
+                            <div class="text-danger">{{ form.editorial.errors }}</div>
+                            {% endif %}
+                        </div>                    
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <div class="form-floating mb-3">
+                                    {{ form.categoria }}
+                                    <label for="{{ form.categoria.id_for_label }}">Categoria</label>
+                                    {% if form.categoria.errors %}
+                                    <div class="text-danger">{{ form.categoria.errors }}</div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="form-floating mb-3">
+                                    {{ form.imagen }}
+                                    <label for="{{ form.imagen.id_for_label }}">Portada del Libro</label>
+                                    {% if form.imagen.errors %}
+                                    <div class="text-danger">{{ form.imagen.errors }}</div>
+                                    {% endif %}  
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Guardar libro</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

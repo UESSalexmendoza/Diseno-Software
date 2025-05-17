@@ -1,0 +1,100 @@
+{% extends 'intercambios/base.html' %}
+
+{% block content %}
+<div class="container py-5">
+  <h2 class="text-center text-primary mb-4">Trueques Pendientes</h2>
+
+  {% if solicitudes %}
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      {% for solicitud in solicitudes %}
+      <div class="col">
+        <div class="card shadow-sm border-0 h-100">
+          <div class="card-body">
+            <h5 class="card-title">Solicitud de: {{ solicitud.usuario.nombreReal }}</h5>
+            <p class="card-text mb-1"><strong>Libro Solicitado:</strong> {{ solicitud.libro.nombre }}</p>
+            <p class="card-text mb-1"><strong>Libro Ofrecido:</strong> {{ solicitud.libroIntercambio.nombre }}</p>
+            <p class="card-text">
+                <span class="badge 
+                {% if solicitud.estadoPeticion.estado == 'Cancelado' or solicitud.estadoPeticion.estado|lower == 'Rechazado' %}
+                    bg-danger
+                {% elif solicitud.estadoPeticion.estado == 'Aprobado' %}
+                    bg-success
+                {% elif solicitud.estadoPeticion.estado == 'En Revision' %}
+                    bg-warning text-dark
+                {% else %}
+                    bg-primary
+                {% endif %}
+                ">
+                {{ solicitud.estadoPeticion.estado }}
+                </span>                
+            </p>
+            <div class="text-end">
+              <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#detalleSolicitud{{ solicitud.id }}">
+                Ver Detalle
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="detalleSolicitud{{ solicitud.id }}" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+              <h5 class="modal-title">Detalle de la Solicitud</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row g-4">
+                <div class="col-md-6">
+                  <div class="card">
+                    {% if solicitud.libro.imagen %}
+                      <img src="{{ solicitud.libro.imagen.url }}" class="card-img-top" alt="Libro solicitado" style="height:400px">
+                    {% endif %}
+                    <div class="card-body">
+                      <h6 class="card-title">{{ solicitud.libro.nombre }}</h6>
+                      <p><strong>Autor:</strong> {{ solicitud.libro.autor }}</p>
+                      <p><strong>Categoria:</strong> {{ solicitud.libro.categoria.nombreCategoria }}</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card">
+                    {% if solicitud.libroIntercambio.imagen %}
+                      <img src="{{ solicitud.libroIntercambio.imagen.url }}" class="card-img-top" alt="Libro ofrecido" style="height:400px">
+                    {% endif %}
+                    <div class="card-body">
+                      <h6 class="card-title">{{ solicitud.libroIntercambio.nombre }}</h6>
+                      <p><strong>Autor:</strong> {{ solicitud.libroIntercambio.autor }}</p>
+                      <p><strong>Categoria:</strong> {{ solicitud.categoria.nombreCategoria }}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-4">
+                <p><strong>Mensaje:</strong> {{ solicitud.mensaje }}</p>
+                    <form id="formEstado{{ solicitud.id }}" onsubmit="return false;">
+                    {% csrf_token %}
+                    <div class="mb-3 mt-4">
+                        <label for="respuesta{{ solicitud.id }}" class="form-label">Respuesta / Comentario:</label>
+                        <textarea class="form-control" name="respuesta" id="respuesta{{ solicitud.id }}" rows="3" placeholder="Escribe tu respuesta aquí..."></textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-warning" onclick="actualizarEstado('{{ solicitud.id }}', 'En Revision')">En Revisión</button>
+                        <button class="btn btn-success" onclick="actualizarEstado('{{ solicitud.id }}', 'Aprobado')">Aprobado</button>
+                        <button class="btn btn-danger" onclick="actualizarEstado('{{ solicitud.id }}', 'Rechazado')">Rechazar</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                    </form>              
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {% endfor %}
+    </div>
+  {% else %}
+    <p class="text-muted text-center">No tienes solicitudes pendientes o en revisión.</p>
+  {% endif %}
+</div>
+{% endblock %}

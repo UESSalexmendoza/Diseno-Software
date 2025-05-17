@@ -1,0 +1,54 @@
+{% extends 'intercambios/base.html' %}
+{% block content %}
+<section class="py-5">
+    <div class="container px-5">
+      <div class="bg-light rounded-3 py-5 px-4 px-md-5 mb-5">
+        <div class="container my-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <h1 class="fw-bold mb-4">Política de Privacidad</h1>
+                    <p class="text-muted">
+                        Esta Política de Privacidad describe cómo recopilamos, usamos y protegemos la información personal de los usuarios que utilizan nuestra plataforma de trueque de libros.
+                    </p>
+
+                    <h4 class="mt-4">1. Información que recopilamos</h4>
+                    <p>
+                        Recopilamos información que el usuario proporciona voluntariamente al registrarse, como nombre de usuario, correo electrónico, y datos de contacto. Esta información se utiliza exclusivamente para el funcionamiento del sistema y no se comparte con terceros.
+                    </p>
+
+                    <h4 class="mt-4">2. Uso de la información</h4>
+                    <p>
+                        Los datos recopilados permiten a los usuarios interactuar entre sí mediante solicitudes de intercambio, contacto por mensajería y visualización de catálogos de libros.
+                    </p>
+
+                    <h4 class="mt-4">3. Seguridad</h4>
+                    <p>
+                        Aplicamos medidas técnicas razonables para proteger la información del usuario. Sin embargo, ningún sistema es completamente seguro y no podemos garantizar la seguridad absoluta.
+                    </p>
+
+                    <h4 class="mt-4">4. Derechos del usuario</h4>
+                    <p>
+                        El usuario puede acceder, corregir o eliminar su información en cualquier momento desde su perfil. También puede solicitar la eliminación completa de su cuenta contactando con el administrador.
+                    </p>
+
+                    <h4 class="mt-4">5. Cambios en la política</h4>
+                    <p>
+                        Esta política puede ser modificada en cualquier momento. Se notificará a los usuarios mediante un mensaje destacado en el sitio web.
+                    </p>
+
+                    <p class="mt-4">
+                        Si tienes preguntas sobre esta política, puedes contactarnos en <strong>soporte@truequelibrosuees.edu.ec</strong>.
+                    </p>
+
+                    <div class="text-end mt-5">
+                        <a href="{% url 'inicio' %}" class="btn btn-secondary">Volver al inicio</a>
+                    </div>
+                </div>
+            </div>
+        </div>        
+      </div>
+    </div>
+  </section>
+{% endblock %}
+
+

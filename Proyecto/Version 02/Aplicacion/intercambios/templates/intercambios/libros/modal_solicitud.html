@@ -1,0 +1,34 @@
+<div class="modal-header bg-primary text-white">
+  <h5 class="modal-title">Solicitar Intercambio</h5>
+  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+</div>
+
+<form method="post" action="{% url 'crear_peticion' %}">
+  {% csrf_token %}
+  <div class="modal-body">
+ <input type="hidden" name="libro_id" value="{{ libro.id }}">    
+    <p><strong>Libro:</strong> {{ libro.nombre }}</p>
+    <p><strong>Autor:</strong> {{ libro.autor }}</p>
+    <p><strong>Categoría:</strong> {{ libro.categoria.nombreCategoria }}</p>
+    <p><strong>Propietario:</strong> {{ libro.usuario.nombreReal }}</p>
+    <p class="card-text small"><strong>Contacto:</strong> {{ libro.usuario.contactoPrincipal.tipoContacto }}</p>
+    <div class="form-floating mb-3">
+        {{ form.libro_ofrecido }}
+        <label for="{{ form.libro_ofrecido.id_for_label }}">Nombre del Libro</label>
+        {% if form.libro_ofrecido.errors %}
+        <div class="text-danger">{{ form.libro_ofrecido.errors }}</div>
+        {% endif %}
+    </div>                    
+    <div class="form-floating mb-3">
+        {{ form.mensaje }}
+        <label for="{{ form.mensaje.id_for_label }}">Mensaje o Comentario</label>
+        {% if form.mensaje.errors %}
+        <div class="text-danger">{{ form.mensaje.errors }}</div>
+        {% endif %}
+    </div>                    
+  </div>
+  <div class="modal-footer">
+    <button type="submit" class="btn btn-primary">Enviar Solicitud</button>
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+  </div>
+</form>
