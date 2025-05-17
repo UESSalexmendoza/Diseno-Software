@@ -61,7 +61,7 @@ El proyecto se encuentra divido en 2 fases
 ### 🏗️ Etapa 04: Diseño detallado
 - 📄 [Diagramas de clases]
 - 📄 [Diagramas de secuencia]
-- 📄 [Modelo de datos]
+- 📄 [Modelo de datos](https://github.com/UESSalexmendoza/Diseno-Software/blob/88d308a5a1fb661f7957c7a11603b2fc266e4a95/Fase%202/Modelo%20de%20datos/04%20Modelo%20de%20Datos.pdf)
 - 📄 [Justificación de patrones de diseño]
 ### 🏗️ Etapa 05: Desarrollo del prototipo
 - 📄 [Prototipo funcional en alta fidelidad]
