@@ -88,7 +88,7 @@ El proyecto se encuentra divido en 2 fases
 ---
 ## 🚀 Control y seguimiento
 
-- 📄 [Evidencias para decisiones](https://github.com/UESSalexmendoza/Diseno-Software/discussions)
+- 📄 [Evidencias para decisiones](https://github.com/UESSalexmendoza/Diseno-Software/discussions?discussions_q=)
 - 📄 [Bitacora de Pendientes](https://github.com/UESSalexmendoza/Diseno-Software/issues?q=is%3Aissue%20state%3Aclosed)
 
 ---
