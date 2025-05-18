@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %}Solicitar Trueque{% endblock %}
+{% block content %}
+<h2>Solicitar trueque por: <em>{{ libro_deseado.titulo }}</em></h2>
+
+<form method="post" class="mt-3">
+    {% csrf_token %}
+    <div class="mb-3">
+        <label for="libro_ofrecido" class="form-label">Selecciona uno de tus libros:</label>
+        <select name="libro_ofrecido" id="libro_ofrecido" class="form-select">
+            {% for libro in mis_libros %}
+                <option value="{{ libro.id }}">{{ libro.titulo }} - {{ libro.estado }}</option>
+            {% endfor %}
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar solicitud</button>
+    <a href="{% url 'index' %}" class="btn btn-secondary">Cancelar</a>
+</form>
+{% endblock %}
+

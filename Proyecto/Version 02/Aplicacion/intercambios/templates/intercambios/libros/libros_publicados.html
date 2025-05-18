@@ -1,0 +1,102 @@
+{% extends 'intercambios/base.html' %}
+{% block title %}Libros Disponibles para Trueque{% endblock %}
+
+{% block content %}
+<section class="py-5">
+    <div class="container px-4">
+        <h2 class="text-center mb-4 text-primary">Catálogo de Libros Publicados</h2>
+        <form method="get" class="row justify-content-center mb-4">
+            <div class="col-md-6 d-flex">
+                <input type="text" name="q" value="{{ request.GET.q }}" class="form-control me-2" placeholder="Buscar por título, autor o categoría...">
+                <button class="btn btn-outline-primary" type="submit">Buscar</button>
+            </div>
+        </form>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+            {% for libro in libros %}
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0 libro-card" style="background-color: #f8fbff; max-width: 240px; margin: auto; position: relative;">
+                    <div class="btn-flotantes">
+                        <button class="btn btn-sm btn-primary me-1" title="Ver detalle" data-bs-toggle="modal" data-bs-target="#detalleLibro{{ libro.id }}">
+                            <i class="bi bi-eye-fill"></i>
+                        </button>
+                        <button class="btn btn-success btn-sm solicitar-btn" data-bs-toggle="modal" data-bs-target="#modalSolicitud" data-libro-id="{{ libro.id }}"
+                        {% if not user.is_authenticated %}
+                            data-requiere-login="true"
+                        {% endif %}
+                        >
+                            <i class="bi bi-arrow-left-right"></i>
+                        </button>
+                    </div>
+                    {% if libro.imagen %}
+                    <img src="{{ libro.imagen.url }}" class="card-img-top rounded-top" alt="Portada del libro" style="height: 300px; object-fit: cover;">
+                    {% endif %}
+                    <div class="card-body p-2">
+                        <h6 class="card-title text-primary mb-1">{{ libro.nombre }}</h6>
+                        <p class="card-text small mb-1"><strong>Autor:</strong> {{ libro.autor }}</p>
+                        <p class="card-text small mb-1"><strong>Categoría:</strong> {{ libro.categoria.nombreCategoria }}</p>
+                        <p class="card-text small mb-1"><strong>Publicado por:</strong> {{ libro.usuario.nombreReal }}</p>
+                        <p class="card-text small"><strong>Contacto:</strong> {{ libro.usuario.contactoPrincipal.tipoContacto }}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="detalleLibro{{ libro.id }}" tabindex="-1" aria-hidden="true" data-libro-id="{{ libro.id }}">       
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header bg-primary text-white">
+                            <h5 class="modal-title">{{ libro.nombre }}</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                {% if libro.imagen %}
+                                <div class="col-md-4 mb-3">
+                                    <img src="{{ libro.imagen.url }}" class="img-fluid rounded shadow-sm" alt="Portada" style="max-height: 100%; width:100%; object-fit: cover;">
+                                </div>
+                                {% endif %}
+                                <div class="col-md-8">
+                                    <p><strong>Categoría:</strong> {{ libro.categoria.nombreCategoria }}</p>
+                                    <p><strong>Autor:</strong> {{ libro.autor }}</p>
+                                    <p><strong>Editorial:</strong> {{ libro.editorial }}</p>
+                                    <p><strong>Descripción:</strong> {{ libro.descripcion }}</p>
+                                    <p><strong>Publicado por:</strong> {{ libro.usuario.nombreReal }}</p>
+                                    <p><strong>Contacto:</strong> {{ libro.usuario.contactoPrincipal.tipoContacto }}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% empty %}
+            <div class="col text-center">
+                <p class="text-muted">No se encontraron libros publicados.</p>
+            </div>
+            {% endfor %}
+            <div class="modal fade" id="modalSolicitud" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content" id="modalSolicitudContent">
+                    </div>
+                </div>
+            </div>      
+        </div>
+    </div>
+</section>
+
+<!-- Estilos para botones flotantes -->
+<style>
+  .btn-flotantes {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: none;
+    z-index: 10;
+  }
+
+  .libro-card:hover .btn-flotantes {
+    display: flex;
+  }
+</style>
+
+{% endblock %}

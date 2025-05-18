@@ -1,0 +1,110 @@
+{% extends 'intercambios/base.html' %}
+{% block title %}Mis Solicitudes de Intercambio{% endblock %}
+
+{% block content %}
+<section class="py-5">
+  <div class="container px-4">
+    <h2 class="mb-4 text-primary text-center">Mis Solicitudes de Intercambio</h2>
+
+    <div class="table-responsive">
+      <table class="table table-bordered table-hover align-middle">
+        <thead class="table-light">
+          <tr>
+            <th>Fecha</th>
+            <th>Libro Solicitado</th>
+            <th>Mi Libro Ofrecido</th>
+            <th>Estado</th>
+            <th>Acción</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for peticion in peticiones %}
+          <tr>
+            <td>{{ peticion.fechaPeticion|date:"d/m/Y H:i" }}</td>
+            <td>{{ peticion.libro.nombre }}</td>
+            <td>{{ peticion.libroIntercambio.nombre }}</td>
+            <td>
+                <span class="badge 
+                {% if peticion.estadoPeticion.estado == 'Cancelado' or peticion.estadoPeticion.estado == 'Rechazado' %}
+                    bg-danger
+                {% elif peticion.estadoPeticion.estado == 'Aprobado' %}
+                    bg-success
+                {% elif peticion.estadoPeticion.estado == 'En Revision' %}
+                    bg-warning text-dark
+                {% else %}
+                    bg-primary
+                {% endif %}
+                ">
+                {{ peticion.estadoPeticion.estado }}
+                </span>                
+            </td>
+            <td>
+              <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#detallePeticion{{ peticion.id }}">
+                Ver detalle
+              </button>
+            </td>
+          </tr>
+          <div class="modal fade" id="detallePeticion{{ peticion.id }}" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                  <h5 class="modal-title">Detalle de Solicitud</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col-md-6 mb-3">
+                      <div class="card border-success shadow-sm">
+                        {% if peticion.libroIntercambio.imagen %}
+                        <img src="{{ peticion.libroIntercambio.imagen.url }}" class="card-img-top" style="height:400px" alt="Mi Libro">
+                        {% endif %}
+                        <div class="card-body">
+                          <p class="card-title">{{ peticion.libroIntercambio.nombre }}</p>
+                          <p class="card-text"><strong>Autor:</strong> {{ peticion.libroIntercambio.autor }}</p>
+                          <p class="card-text"><strong>Categoría:</strong> {{ peticion.libroIntercambio.categoria.nombreCategoria }}</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Libro solicitado -->
+                    <div class="col-md-6 mb-3">
+                      <div class="card border-info shadow-sm">
+                        {% if peticion.libro.imagen %}
+                        <img src="{{ peticion.libro.imagen.url }}" class="card-img-top" alt="Libro Solicitado" style="height:400px">
+                        {% endif %}
+                        <div class="card-body">
+                          <p class="card-title">{{ peticion.libro.nombre }}</p>
+                          <p class="card-text"><strong>Autor:</strong> {{ peticion.libro.autor }}</p>
+                          <p class="card-text"><strong>Categoría:</strong> {{ peticion.libro.categoria.nombreCategoria }}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mt-3">
+                    <p><strong>Tu mensaje:</strong> {{ peticion.mensaje }}</p>
+                    <p><strong>Respuesta:</strong> {{ peticion.respuesta }}</p>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                    {% if peticion.estadoPeticion.estado == 'pendiente' %}
+                    <form method="post" action="{% url 'cancelar_peticion' peticion.id %}">
+                        {% csrf_token %}
+                        <button type="submit" class="btn btn-danger">Cancelar Solicitud</button>
+                    </form>
+                    {% endif %}                    
+                  <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+
+    {% if not peticiones %}
+      <p class="text-muted text-center">No has realizado ninguna solicitud de intercambio.</p>
+    {% endif %}
+  </div>
+</section>
+{% endblock %}

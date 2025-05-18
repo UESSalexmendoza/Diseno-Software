@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %}Inicio{% endblock %}
+{% block content %}
+<h2 class="mb-4">Libros disponibles para trueque</h2>
+<div class="row">
+    {% for libro in libros %}
+    <div class="col-md-4 mb-4">
+        <div class="card">
+            {% if libro.imagen %}
+                <img src="{{ libro.imagen.url }}" class="card-img-top" alt="{{ libro.titulo }}">
+            {% endif %}
+            <div class="card-body">
+                <h5 class="card-title">{{ libro.titulo }}</h5>
+                <p class="card-text"><strong>Autor:</strong> {{ libro.autor }}</p>
+                <p class="card-text">{{ libro.descripcion|truncatechars:100 }}</p>
+                <p class="card-text"><strong>Estado:</strong> {{ libro.estado }}</p>
+                <p class="card-text text-muted">Publicado por {{ libro.usuario.username }}</p>
+                {% if user.is_authenticated and libro.usuario != user %}
+                    <a href="{% url 'solicitar_trueque' libro.id %}" class="btn btn-primary">Solicitar trueque</a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    {% empty %}
+        <p>No hay libros disponibles en este momento.</p>
+    {% endfor %}
+</div>
+{% endblock %}
