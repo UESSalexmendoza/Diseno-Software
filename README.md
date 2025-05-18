@@ -70,7 +70,7 @@ El proyecto se encuentra divido en 2 fases
 - 📄 [Prototipo funcional en alta fidelidad]
    - [Version 01](https://github.com/UESSalexmendoza/Diseno-Software/tree/main/Proyecto/Version%2001/trueque_libros_platform)
    - [Version Final](https://github.com/UESSalexmendoza/Diseno-Software/tree/main/Proyecto/Version%2002/Aplicacion)
-- 📄 [Control de versiones en GitHub con ramas por integrante]
+- 📄 [Control de versiones en GitHub con ramas por integrante](https://github.com/UESSalexmendoza/Diseno-Software/pulls?q=is%3Apr+is%3Aclosed)
 - 📄 [Documentación del código y README del proyecto]
 ---
 
