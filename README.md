@@ -56,17 +56,20 @@ El proyecto se encuentra divido en 2 fases
 ### 🏗️ Etapa 03 – Diseño Arquitectónico
 - 📄 [Documento de arquitectura de software](https://github.com/UESSalexmendoza/Diseno-Software/blob/main/Fase%201/Documentacion/04%20Diseno%20Arquitectonico.pdf)
 - 📄 [Arquitectura de Seguridad](https://github.com/UESSalexmendoza/Diseno-Software/blob/main/Fase%201/Documentacion/05%20Diseno%20Arquitectonico%20-%20Seguridad.pdf)
-- 📄 [Diagrama de Componentes]
-- 📄 [Diagrama de despliegue]
+- 📄 [Diagrama de Componentes](https://github.com/UESSalexmendoza/Diseno-Software/blob/main/Fase%202/Documentacion/01%20Componentes%20y%20Modulos%20Principales.pdf)
+- 📄 [Diagrama de despliegue](https://github.com/UESSalexmendoza/Diseno-Software/blob/main/Fase%202/Documentacion/02%20Diagrama%20de%20Despliegue.pdf)
 ### 🏗️ Etapa 04: Diseño detallado
-- 📄 [Diagramas de clases]
-- 📄 [Diagramas de secuencia]
-- 📄 [Modelo de datos](https://github.com/UESSalexmendoza/Diseno-Software/blob/88d308a5a1fb661f7957c7a11603b2fc266e4a95/Fase%202/Modelo%20de%20datos/04%20Modelo%20de%20Datos.pdf)
-- 📄 [Justificación de patrones de diseño](https://github.com/UESSalexmendoza/Diseno-Software/blob/a59738d1b02fdcc24a697e4eb27291339b02c2da/Fase%202/Justificaci%C3%B3n%20de%20dise%C3%B1o/05%20Justificacion%20de%20Diseno.pdf)
+- 📄 [Diagramas de clases](https://github.com/UESSalexmendoza/Diseno-Software/blob/main/Fase%202/Documentacion/03%20Diagrama%20de%20Clases.pdf)
+- 📄 [Diagramas de estados](https://github.com/UESSalexmendoza/Diseno-Software/blob/main/Fase%202/Documentacion/08%20Diagrama%20de%20Estados.pdf)
+- 📄 [Casos de Uso](https://github.com/UESSalexmendoza/Diseno-Software/blob/main/Fase%202/Documentacion/06%20Casos%20de%20Uso.pdf)
+- 📄 [Modelo de datos](https://github.com/UESSalexmendoza/Diseno-Software/blob/main/Fase%202/Documentacion/05%20Justificacion%20de%20Diseno.pdf)
+- 📄 [Diagrama de Actividad](https://github.com/UESSalexmendoza/Diseno-Software/blob/main/Fase%202/Documentacion/07%20Diagrama%20de%20Actividad.pdf)
+- 📄 [Justificación de patrones de diseño](https://github.com/UESSalexmendoza/Diseno-Software/blob/main/Fase%202/Documentacion/05%20Justificacion%20de%20Diseno.pdf)
+- 📄 [Modelo / Usar Star UML](https://github.com/UESSalexmendoza/Diseno-Software/blob/main/Fase%202/Documentacion/Entidad%20Relacion.mdj)
 ### 🏗️ Etapa 05: Desarrollo del prototipo
 - 📄 [Prototipo funcional en alta fidelidad]
    - [Version 01](https://github.com/UESSalexmendoza/Diseno-Software/tree/main/Proyecto/Version%2001/trueque_libros_platform)
-   - Version Final
+   - [Version Final](https://github.com/UESSalexmendoza/Diseno-Software/tree/main/Proyecto/Version%2002/Aplicacion)
 - 📄 [Control de versiones en GitHub con ramas por integrante]
 - 📄 [Documentación del código y README del proyecto]
 ---
