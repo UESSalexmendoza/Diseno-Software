@@ -41,8 +41,8 @@ Diseñar y desarrollar un prototipo funcional de una plataforma web que permita 
 
 ## 📁 Navegación de Documentos del Proyecto
 El proyecto se encuentra divido en 2 fases
-- 📄 Fase 01. Se presentara la documentacion inicial del diseno
-- 📄 Fase 02. Se complementara la odcumentacion y se mostrara un prototipo funcional (Segunda etapa del proyecto para cierre de parcial)
+- 📄 [Fase 01. Se presentara la documentacion inicial del diseno](https://github.com/UESSalexmendoza/Diseno-Software/tree/main/Fase%201)
+- 📄 [Fase 02. Se complementara la odcumentacion y se mostrara un prototipo funcional (Segunda etapa del proyecto para cierre de parcial)](https://github.com/UESSalexmendoza/Diseno-Software/tree/main/Fase%202)
 - 📄 [Wiki](https://github.com/UESSalexmendoza/Diseno-Software/wiki)
 ### 🧭 Etapa 01 – Planificación y Coordinación
 - 📄 [Acta de conformación del equipo](https://github.com/UESSalexmendoza/Diseno-Software/blob/main/Fase%201/Actas/01-Acta-de-Conformacion-del-Equipo.pdf)
@@ -71,7 +71,7 @@ El proyecto se encuentra divido en 2 fases
    - [Version 01](https://github.com/UESSalexmendoza/Diseno-Software/tree/main/Proyecto/Version%2001/trueque_libros_platform)
    - [Version Final](https://github.com/UESSalexmendoza/Diseno-Software/tree/main/Proyecto/Version%2002/Aplicacion)
 - 📄 [Control de versiones en GitHub con ramas por integrante](https://github.com/UESSalexmendoza/Diseno-Software/pulls?q=is%3Apr+is%3Aclosed)
-- 📄 [Documentación del código y README del proyecto]
+- 📄 [Documentación del código y README del proyecto](https://github.com/UESSalexmendoza/Diseno-Software/blob/main/README.md)
 ---
 
 ## 🧾 Rúbricas de Evaluación
